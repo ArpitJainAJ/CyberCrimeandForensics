@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" type="image/png" href="images/CyberCrimeAndForensicslogo.png">
-	<title>Home</title>
-	<!-- Link to FOnt Awesome Content Delivery Network
-	<link rel="stylesheet" href="https://use.fontawesome">-->
+  <meta charset="UTF-8">
+  <title>Cyber Security and Forensics</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-	<header>
-		<figure>
-			<a href="index.html" target="_self">
-				<img src="CyberCrimeAndForensicslogo.jpg" 
-				width="500px" height="500px" alt="Cyber Crime and Forensics Logo">
-			</a>
-			<figcaption>CYBER CRIME AND FORENSICS</figcaption>
-		</figure>
-		<nav>
-			<a href="index.html" target="_blank">Home</a>
-			<a href="team.html" target="_blank">Team</a>
-			<a href="contact-us.html" target="_blank">Contact Us</a>
-		</nav>
-	</header>
-	<section>
-		<!--Font Awesome CDN
-		<i class="fas fa-shield-alt"></i>-->
-		<p>This page will help you resolve issues if you feel you have been a victim of cyber crime or want to be cautious about such attacks.</p>
-	</section>
+<!-- partial:index.partial.html -->
+<!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>Cyber Security and Forensics</h1>
+    <h3>Sliding content with sticky tab nav</h3>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-home">Home</a>
+      <a class="et-hero-tab" href="#tab-about">About</a>
+      <a class="et-hero-tab" href="#tab-blogs">Blogs</a>
+      <a class="et-hero-tab" href="#tab-queries">Queries</a>
+      <a class="et-hero-tab" href="#tab-team">Team</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-home">
+      <h1>Who am i?/Who is lookup?</h1>
+      <h3>something about it</h3>
+      <div class="field" id="searchform">
+  <input type="text" id="searchterm" placeholder="Section Name" />
+  <button type="button" id="search">Save</button>
+</div>
+    </section>
+    <section class="et-slide" id="tab-about">
+      <h1>About the content</h1>
+      <h3>forensics, Crime</h3>
+    </section>
+    <section class="et-slide" id="tab-blogs">
+      <h1>Blogs</h1>
+      <h3>some blogs here</h3>
+    </section>
+    <section class="et-slide" id="tab-queries">
+      <h1>Ask us questions</h1>
+      <h3>mail or contact us through this</h3>
+    </section>
+    <section class="et-slide" id="tab-team">
+      <h1>Team members</h1>
+      <h3>Development and cyber team</h3>
+    </section>
+  </main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
