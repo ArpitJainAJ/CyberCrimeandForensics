@@ -31,9 +31,9 @@
       <h1>Who am i?/Who is lookup?</h1>
       <h3>something about it</h3>
       <div class="field" id="searchform">
-        <form method = "POST" action="." >
+        <form method = "POST" action="/index/" >
           {% csrf_token %}
-         <input type="text" id="searchterm" placeholder="IP input" />
+         <input type="text" id="searchterm" name = "ip" placeholder="IP input" />
           <button type="submit" id="search">Save</button>
         </form>
       </div>
