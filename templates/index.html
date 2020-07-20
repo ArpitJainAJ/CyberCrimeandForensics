@@ -100,7 +100,9 @@
       <div class="field" id="searchform">
         <form method = "POST" action="/index/" >
           {% csrf_token %}
-         <input type="text" id="searchterm" name = "ip" placeholder="IP input" />
+         <label>Enter IP :
+           <input type="text" id="searchterm"  placeholder="IP input" name = "ip" />
+        </label>
           <button type="submit" id="search">Search</button>
         </form>
       </div>
