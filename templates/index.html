@@ -1,10 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>Cyber Security and Forensics</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link href="{% static ' https://fonts.googleapis.com/css?family=Lato:400,700' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'%}">
+<link rel="stylesheet" href="{% static './style.css'%}">
 
 </head>
 <body>
@@ -29,9 +31,12 @@
       <h1>Who am i?/Who is lookup?</h1>
       <h3>something about it</h3>
       <div class="field" id="searchform">
-  <input type="text" id="searchterm" placeholder="Section Name" />
-  <button type="button" id="search">Save</button>
-</div>
+        <form method = "POST" action="/index/" >
+          {% csrf_token %}
+         <input type="text" id="searchterm" name = "ip" placeholder="IP input" />
+          <button type="submit" id="search">Save</button>
+        </form>
+      </div>
     </section>
     <section class="et-slide" id="tab-about">
       <h1>About the content</h1>
@@ -51,7 +56,8 @@
     </section>
   </main>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'%}"></script>
+  <script  src="{% static './script.js'%}"></script>
 
 </body>
 </html>
