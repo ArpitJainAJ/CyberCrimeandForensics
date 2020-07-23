@@ -19,6 +19,7 @@ from myapp.views import index_call
 from myapp import views
 admin.autodiscover()
 
+ 
 urlpatterns = [
    
     path('admin/', admin.site.urls),
@@ -26,4 +27,4 @@ urlpatterns = [
     path('index/',views.index),
     path('index2/',views.index)
 
-]
+] 

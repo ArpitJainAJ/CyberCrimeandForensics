@@ -16,8 +16,9 @@ $(".carousel").swipe({
   
 	},
 	allowPageScroll:"vertical"
-  
-  });
+	
+	  }
+	  );
   class StickyNavigation {
 	  
 	  constructor() {
