@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.urls import include, path
 from django.contrib import admin
+from myapp.views import index_call
 from myapp import views
 admin.autodiscover()
 
+ 
 urlpatterns = [
    
     path('admin/', admin.site.urls),
     path('',views.index, name='index'),
-    path('index/',views.index)
+    path('index/',views.index),
+    path('index2/',views.index)
 
-]
+] 
