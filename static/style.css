@@ -132,3 +132,68 @@ background-color: #819090;
 color: #fff;
 border:none;
 }
+/*new addition*/
+
+#tab-blogs{
+  padding-top: 2%;
+  display:inline-block;
+  width: 100%;
+}
+.et-hero-tabs h2,
+.et-slide h2 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+#reference-links{
+  float: left;
+  display: inline-block;
+  width: 30%;
+  height: 25%;
+  text-align: left;
+  overflow: auto;
+}
+
+#reference-links a:hover{
+  font-size: 125%;
+}
+
+#blog-complaint{
+  float: right;
+  display: inline-block;
+  width: 60%;
+  height: 25%;
+  margin-left: 10%;
+  text-align: left;
+  overflow: auto;
+}
+#blog-complaint a{
+  font-weight: bold;
+}
+
+#blog-news{
+  float:left;
+  display: inline-block;
+  width: 30%;
+  height: 25%;
+  text-align: left;
+  overflow: auto;
+}
+
+#tab-team{
+  padding-top: 2%;
+  display:inline-block;
+  width: 100%;
+}
+
+.et-members{
+  padding-top: 5%;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 50%;
+  width: 25%;
+  height:25%;
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
